@@ -23,8 +23,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/why-not-phoenix/frontend-mentor-recipe-page](https://github.com/why-not-phoenix/frontend-mentor-recipe-page)
+- Live Site URL: [https://why-not-phoenix.github.io/frontend-mentor-recipe-page/](https://why-not-phoenix.github.io/frontend-mentor-recipe-page/)
 
 ## My process
 
