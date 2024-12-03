@@ -1,0 +1,172 @@
+/* General and Repeated Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+    color: hsl(24, 5%, 18%);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-size: 33px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+header, main, section, ul, ol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li {
+    margin-left: 25px;
+    padding-left: 20px;
+    color: hsl(14, 45%, 36%);
+}
+
+/* Card */
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 100vw;
+}
+
+/* Card Head */
+header {
+    gap: 40px;
+}
+
+header img {
+    width: 100%;
+}
+
+.header-message {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.header-message h1 {
+    font-size: 37px;
+    color: hsl(24, 5%, 18%);
+}
+
+/* Card Body */
+main {
+    gap: 35px;
+    padding: 35px 30px 0;
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.prep-time h2 {
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+}
+
+.list {
+    font-weight: 400;
+}
+
+.list span {
+    font-weight: 600;
+}
+
+.ingredients, .instructions {
+    gap: 25px;
+    padding-bottom: 34px;
+    border-bottom: 0.5px solid hsla(15, 4%, 18%, 0.1);
+}
+
+.instructions li {
+    font-weight: 600;
+}
+
+/* Card Table 💀 */
+table {
+    border-collapse: collapse; /* The table's border wouldn't work w/o this */
+}
+
+tr {
+    border-bottom: 0.5px solid hsla(15, 4%, 18%, 0.1);
+    height: 45px; /* Instead of padding cos it doesn't work with display: table-row */
+}
+
+tr:last-child{ 
+    /* Last row */
+    border: none;
+}
+
+/* Part of my solution to not being able to pad */
+.nutrient {
+    padding-left: 35px;
+    width: 165px;
+}
+
+.value {
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsiveness for larger screens */
+@media (min-width: 900px) {
+
+    body {
+        background-color: hsl(30, 54%, 90%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 121px;
+    } 
+    
+    li {
+        padding-left: 10px;
+    }
+    
+    .card {
+        width: 735px;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    header img {
+        border-radius: 10px;
+    }
+
+    .header-message {
+        padding: 0;
+    }
+
+    .header-message h1 {
+        font-size: 44px;
+    }
+
+    main {
+        gap: 35px;
+        padding: 35px 0 0;
+    }
+
+    .nutrient {
+        width: 338.5px;
+    }
+}
